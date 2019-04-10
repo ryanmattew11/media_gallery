@@ -69,6 +69,100 @@ a.nav-item:hover {
 @media screen and (min-width: 768px) {
   .topnav {display: flex; flex-direction: row; justify-content: space-around;}
 }
+/*--Slideshow styles--*/
+.slideshow {
+  background-color: var(--bg);
+  padding: 1em;
+}
+.slideshow-wrapper {
+  position: relative;
+  margin: auto;
+  margin-top: 2em;
+  max-width: 1440px;
+}
+.slideshow-wrapper img {
+  width: 100%;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.8s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: var(--accent)
+}
+.text-center {
+  text-align: center;
+}
+.captiontext {
+  background: var(--accent);
+  color: var(--rev-text);
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numberof {
+  color: var(--rev-text);
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.indicator {
+  cursor:pointer;
+  height: auto;
+  width: 24%;
+  margin: 0 2px;
+  background-color: var(--bg);
+  display: inline-block;
+  transition: all 500ms ease-in-out;
+  opacity: .4;
+}
+.indicator img {
+  width: 100% !important;
+}
+.active, .indicator:hover {
+  opacity: 1;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade; /*-- webkit prefix  --*/
+  -webkit-animation-duration: 1.5s; /*-- webkit prefix --*/
+  animation-name: fade; /*-- defines which animation to use --*/
+  animation-duration: 1.5s; /*-- sets the duration --*/
+}
+@-webkit-keyframes fade { /*-- webkit prefix --*/
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade { /*-- sets "fade" animation properties --*/
+  from {opacity: .4} /*-- sets start of animation --*/
+  to {opacity: 1} /*-- sets end of animation --*/
+}
+/* On smaller screens, hides slideshow */
+@media only screen and (max-width: 767px) {
+  .slideshow {display: none;}
+}
+
 /*--grid styles--*/
 .grid {
   margin-top: 5em;
@@ -125,10 +219,10 @@ a.nav-item:hover {
   background-image: url('https://www.everydaymaven.com/wp-content/uploads/2014/05/Homemade-Mayonnaise-Recipe-FB.jpg');
 }
 .seven .thumb {
-  background-image: url('');
+  background-image: url('https://www.dougcookrd.com/wp-content/uploads/2013/10/Water-glasses.jpg');
 }
 .eight .thumb {
-  background-image: url('');
+  background-image: url('http://freefoodphotos.com/imagelibrary/bread/white_bread.jpg');
 }
 
 .card-content {
