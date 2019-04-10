@@ -25,22 +25,22 @@
       <div class="slideshow-wrapper">
         <div class="slide fade">
           <div class="numberof">1 of 4</div>
-          <img src="https://pixl.varagesale.com/http://s3.amazonaws.com/hopshop-image-store-production/51502412/df2111013cdadc935a92dc8df4b4b83f.jpg?_ver=large&w=1500&h=1500&fit=max&s=0a1d61a045f56e6938187ba22c56cf5a"/>
+          <img src="img/antique.jpg"/>
           <div class="captiontext">This is a toaster. At least, what they used to look like</div>
         </div><!-- end .slide.fade -->
         <div class="slide fade">
           <div class="numberof">2 of 4</div>
-          <img src="https://www.ariete.net/media/images/product/main/ariete-toaster-due-fette-155-verde-dettaglio02.jpg"/>
+          <img src="img/vintage.jpg"/>
           <div class="captiontext">Next came the vintage toaster. See how vintage?</div>
         </div><!-- end .slide.fade -->
         <div class="slide fade">
           <div class="numberof">3 of 4</div>
-          <img src="https://pdbimg.choice.com.au/breville-the-toast-control-2-lta620bss_1.JPG"/>
+          <img src="img/third.jpg"/>
           <div class="captiontext">This is just a regular old toaster.</div>
         </div><!-- end .slide.fade -->
         <div class="slide fade">
           <div class="numberof">4 of 4</div>
-          <img src="https://img-new.cgtrader.com/items/1016313/17211c1865/modern-toaster-3d-model-stl-ige-igs-iges-stp.jpg"/>
+          <img src="img/future.jpg"/>
           <div class="captiontext">Could this be the future of toasting technology?</div>
         </div><!-- end .slide.fade -->
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -48,10 +48,10 @@
       </div><!--end slideshow-wrapper-->
       <br>
       <div class="text-center">
-        <span class="indicator" onclick="currentSlide(1)"><img src="https://pixl.varagesale.com/http://s3.amazonaws.com/hopshop-image-store-production/51502412/df2111013cdadc935a92dc8df4b4b83f.jpg?_ver=large&w=1500&h=1500&fit=max&s=0a1d61a045f56e6938187ba22c56cf5a"/></span>
-        <span class="indicator" onclick="currentSlide(2)"><img src="https://www.ariete.net/media/images/product/main/ariete-toaster-due-fette-155-verde-dettaglio02.jpg"/></span>
-        <span class="indicator" onclick="currentSlide(3)"><img src="https://pdbimg.choice.com.au/breville-the-toast-control-2-lta620bss_1.JPG"/></span>
-        <span class="indicator" onclick="currentSlide(4)"><img src="https://img-new.cgtrader.com/items/1016313/17211c1865/modern-toaster-3d-model-stl-ige-igs-iges-stp.jpg"/></span>
+        <span class="indicator" onclick="currentSlide(1)"><img src="img/antique.jpg"/></span>
+        <span class="indicator" onclick="currentSlide(2)"><img src="img/vintage.jpg"/></span>
+        <span class="indicator" onclick="currentSlide(3)"><img src="img/third.jpg"/></span>
+        <span class="indicator" onclick="currentSlide(4)"><img src="img/future.jpg"/></span>
       </div>
     </section>
     <main class="grid">
@@ -60,8 +60,21 @@
         <div class="card-content">
           <h4 class="card-title">Toast</h4>
           <p class="card-text">Ahh, yes. A classic for certain. You can toast that, although toasting toast seems rather redundent.</p>
+          <button data-modal="#01" class="card-more button">View</button>
         </div>
       </div><!--end .main-grid-item -->
+      <div id="01" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://grist.files.wordpress.com/2014/10/twohottoast.jpg?w=1024&h=576&crop=1" alt="toast" />
+  					<div class="eg-text">
+  						<h3>Out of Focus Book</h3>
+  						<p>Books are always best when slightly out of focus and blurred, so you don't have to actually read them . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
       <div class="grid-item two">
         <div class="thumb"></div><hr />
         <div class="card-content">
@@ -112,7 +125,9 @@
         </div>
       </div><!--end .main-grid-item -->
     </main>
-
+    <footer>
+          <p>&copy; 2019 Ryan Perrillo &nbsp;|&nbsp; Photos from the internet
+    </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
   </script>
   <script src="js/page.js">

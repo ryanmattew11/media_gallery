@@ -121,7 +121,7 @@ a.nav-item:hover {
   text-align: center;
 }
 .numberof {
-  color: var(--rev-text);
+  color: var(--text);
   font-size: 18px;
   padding: 8px 12px;
   position: absolute;
@@ -242,4 +242,73 @@ a.nav-item:hover {
   line-height: 1.2;
   align-self: flex-start;
   color: var(--rev-text);
+}
+/*-- Modal Styles --*/
+/* The Modal (background) */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1100;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(10, 10, 10, 0.85);
+}
+.modal-content {
+   background-color: var(--bg);
+   color: var(--text);
+   margin: 1rem auto;
+   padding: 1em;
+   width: 92%;
+   border-radius: 4px;
+   animation: fadein .3s ease-in-out;
+}
+@keyframes fadein {
+  from{transform:scale(.1);}
+}
+.close {
+   color: var(--text);
+   font-size: 2.5em;
+   font-weight: bold;
+   position: absolute;
+   top: 5px;
+   right: 4.25%;
+   transition: all .2s ease-in;
+}
+.close:hover,
+.close:focus {
+   color: var(--accent);
+   text-decoration: none;
+   cursor: pointer;
+}
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+.eg-text {
+  align-self: center;
+}
+.eg-text h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.modal-body img {
+  margin-bottom: 1.5em;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 1280px) {
+  .modal-body {grid-template-columns: 7fr 5fr;}
+}
+
+/*--Footer styles--*/
+footer {
+  background-color: var(--text);
+  padding: .25rem;
+  margin-top: 2em;
+  color: var(--rev-text);
+  text-align: center;
 }
