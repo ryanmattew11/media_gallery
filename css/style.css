@@ -243,6 +243,24 @@ a.nav-item:hover {
   align-self: flex-start;
   color: var(--rev-text);
 }
+button.card-more {
+  background: transparent;
+  padding: .45em .7em .4em .7em;
+  border-radius: 200px;
+  font-size: .7em;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+button.card-more, button.card-more:visited {
+  color: var(--rev-text);
+  border: 1.5px solid var(--rev-text);
+  transition: all 250ms ease-in-out;
+}
+button.card-more:hover, button.card-more:active {
+  color: var(--prime);
+  border-color: var(--prime);
+}
 /*-- Modal Styles --*/
 /* The Modal (background) */
 .modal {
@@ -300,6 +318,7 @@ a.nav-item:hover {
   width: 100%;
   height: auto;
 }
+
 @media screen and (min-width: 1280px) {
   .modal-body {grid-template-columns: 7fr 5fr;}
 }
